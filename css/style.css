@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 body{
-
+	font: 300 18px/1.2 'Lato', sans-serif;
+	background: #fff;
+	color: #171717;
 }
 
 /* Layout */
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 1200px;
+	max-width: 1440px;
 }
 
 /* Typography */
+h1,h2,h3,h4,h5,h6,p,blockquote{
+	margin: 0;
+	padding: 0;
+}
 a,
 input[type="submit"],
 input[type="button"],
@@ -50,4 +58,43 @@ select:focus {
 }
 textarea {
 
+}
+.story{
+	box-shadow: 4px 4px 68px 0px rgba(0,0,0,0.1);
+	margin: 130px 100px;
+	padding: 140px 135px 120px 120px;
+}
+.story__title{
+	font: 400 42px/1 'Playfair Display', serif;
+	margin-bottom: 35px;
+	letter-spacing: -0.01em;
+}
+.story__text{
+	line-height: 36px;
+	margin-bottom: 52px;
+}
+p:first-of-type::first-letter{
+	font-family: 'Playfair Display', serif;
+	font-size: 110px;
+	float: left;
+	padding: 0 30px 24px 0;
+	margin-top: 3git 0px;
+}
+.story__quote{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+}
+.story__btn{
+	font: 700 18px/1 'Lato', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	color: #eaa258;
+	border: 2px solid #eaa258;
+	letter-spacing: 0.2em;
+	padding: 25px 73px;
+	margin-top: 40px;
+	line-height: 18px;
+	height: 65px;
 }
