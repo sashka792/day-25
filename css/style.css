@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 body{
-	font: 300 18px/1.2 'Lato', sans-serif;
+	font: 300 18px/1.88 'Lato', sans-serif;
 	background: #fff;
-	color: #171717;
+	color: #828282;
 }
 
 /* Layout */
 .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 130px 20px;
 	max-width: 1440px;
 }
 
 /* Typography */
-h1,h2,h3,h4,h5,h6,p,blockquote{
-	margin: 0;
-	padding: 0;
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0 0 40px 0;
 }
 a,
 input[type="submit"],
@@ -61,29 +59,42 @@ textarea {
 }
 .story{
 	box-shadow: 4px 4px 68px 0px rgba(0,0,0,0.1);
-	margin: 130px 100px;
-	padding: 140px 135px 120px 120px;
+	padding: 140px 125px;
+	letter-spacing: 0.062em;
 }
 .story__title{
 	font: 400 42px/1 'Playfair Display', serif;
-	margin-bottom: 35px;
-	letter-spacing: -0.01em;
+	color: #171717;
 }
-.story__text{
-	line-height: 36px;
-	margin-bottom: 52px;
-}
-p:first-of-type::first-letter{
-	font-family: 'Playfair Display', serif;
-	font-size: 110px;
+
+.story p:first-of-type::first-letter{
 	float: left;
-	padding: 0 30px 24px 0;
-	margin-top: 3git 0px;
+	font: 400 110px/0.8 "Playfair Display", serif;
+	color: #171717;
+	margin: 0 20px 5px 0;
+}
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+}
+.story p:last-of-type{
+	margin-bottom: 0;
 }
 .story__quote{
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-style: italic;
 	font-size: 24px;
+	letter-spacing: 0.05em;
+	line-height: 1.42;
+	margin: 0 0 40px;
+}
+.story__quote-sign{
+	font-style: italic;
+	color: #171717;
+	display: inline-block;
+	font-size: 60px;
+	margin-right: 20px;
 }
 .story__btn{
 	font: 700 18px/1 'Lato', sans-serif;
@@ -94,7 +105,6 @@ p:first-of-type::first-letter{
 	border: 2px solid #eaa258;
 	letter-spacing: 0.2em;
 	padding: 25px 73px;
-	margin-top: 40px;
 	line-height: 18px;
 	height: 65px;
 }
